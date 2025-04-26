@@ -13,7 +13,7 @@ const FlightOffers = () => {
           <h4 className="text-xl font-semibold">Top Flight Deals Offers Await!</h4>
         </div>
       </div>
-      <div className="w-full  mt-6 flex flex-col lg:justify-between items-center gap-6 lg:flex-wrap">
+      <div className="w-full  mt-6 flex flex-col lg:justify-between lg:flex-row items-center gap-6 lg:flex-wrap">
         {
             data && data.map((flightData, index) => (
                 <div className="w-full lg:basis-[49%] p-2 bg-white rounded-lg shadow-md" key={index}>
