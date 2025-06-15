@@ -1,4 +1,11 @@
 @import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+/* @tailwind base; */
+@import "tailwindcss/preflight"
+/* @tailwind components; */
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -23,4 +30,71 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.destination-swiper {
+  /* height: 550px; */
+  padding: 20px 0;
+  /* border: 1px solid red; */
+  position: relative;
+}
+/* Optional (global.css or your component css if needed) */
+/* .swiper-button-prev,
+.swiper-button-next {
+  @apply w-8 h-8 text-sm text-white bg-orange-500 rounded-full shadow-md;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px !important;  
+} */
+
+.destination-swiper .swiper-button-next,
+.destination-swiper .swiper-button-prev {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: small !important;
+  background: orange;
+  color: #ff4500; /* orangered color to match your theme */
+}
+
+.destination-swiper .swiper-pagination-bullet-active {
+  background: #ff4500;
+}
+.destination-swiper .swiper-pagination-bullet{
+  display: none;
+}
+.swiper-pagination-bullet {
+  background-color: #d1d5db; 
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ec7310 !important; 
+  width: 16px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 60s linear infinite;
+  }
 }
