@@ -72,7 +72,7 @@ const TopDestinations = () => {
     <div className="max-w-[96%] lg:max-w-[85%] w-full mx-auto py-16 ">
       <div className="relative">
         <div className="border-b border-b-gray-200 w-full flex justify-center  py-3" >
-          <h4 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-600">Popular <span className="relative z-10 before:content-[''] before:absolute before:-top-2 before:-left-3  before:w-full before:h-full before:px-24 before:py-6 sm:before:px-28 sm:before:py-7 md:before:px-36 md:before:py-8 before:bg-[orangered] before:-z-10 before:rounded-[5px] before:skew-x-[-20deg] text-white">Destination</span></h4>
+          <h4 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#1e485b]">Popular <span className="relative z-10 before:content-[''] before:absolute before:-top-2 before:-left-3  before:w-full before:h-full before:px-24 before:py-6 sm:before:px-32 sm:before:py-7 md:before:px-40 md:before:py-8 before:bg-[#1ca8cb] before:-z-10 before:rounded-[5px] before:skew-x-[-20deg] text-white">Destinations</span></h4>
         </div>
       </div>
       <div className="relative  h-[550px] w-full py-2 mt-5 ">
@@ -83,6 +83,9 @@ const TopDestinations = () => {
           navigation={{
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
+          }}
+          coverflowEffect={{
+            slideShadows: false,
           }}
           pagination={{ clickable: true }}
           autoplay={{
@@ -100,33 +103,33 @@ const TopDestinations = () => {
         >
           {destinations.map((card, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-lg w-full h-full relative overflow-hidden group cursor-pointer shadow-md p-2 bg-white">
+              <div className="rounded-lg w-full h-full relative overflow-hidden group cursor-pointer shadow-md p-2 bg-[#eefbfd] hover:bg-[#d4f4f9] transition-all duration-300">
                 <div className="w-full h-56 rounded-md  relative">
                   <Image
                     src={card.image}
                     width={360}
                     height={500}
                     alt={card.city}
-                    className="rounded-md object-cover group-hover:scale-105   transition-all duration-300 w-full h-full"
+                    className="rounded-md object-cover group-hover:scale-101   transition-all duration-300 w-full h-full"
                   />
                   {
                     card.discount ? (
                       <div className="absolute top-2 right-1 px-3 py-2   rounded-full  bg-white/80 backdrop-blur-lg">
-                        <span className="text-black text-sm font-mono ">{card.discount}</span>
+                        <span className="text-[#1b6783] text-sm font-mono ">{card.discount}</span>
                       </div>
                     ) : null
                   }
                 </div>
                 <div className="my-4 border-b-gray-400 border-dashed border-b-2 py-3">
-                  <p className="text-xl font-bold flex items-center gap-2"><FaLocationDot className="text-blue-500" /> {card.country} <span className="text-sm text-gray-500">{card.city}</span></p>
+                  <p className="text-xl font-bold flex items-center gap-2 text-[#1e485b]"><FaLocationDot className="text-[#1ca8cb]" /> {card.country} <span className="text-sm text-[#1b6783]">{card.city}</span></p>
                 </div>
                 <div className="flex flex-col gap-1  my-2">
-                  <h4 className="text-2xl font-bold">{card.heading}</h4>
-                  <p className="text-gray-500 text-sm">{card.description}</p>
+                  <h4 className="text-2xl font-bold text-[#1e485b]">{card.heading}</h4>
+                  <p className="text-[#1b6783] text-sm">{card.description}</p>
                 </div>
                 <div className="mt-4 py-5 flex justify-between items-center">
-                  <button className="px-6 py-3 shadow-stone-300 shadow-md bg-amber-300 hover:bg-orange-600 hover:shadow-orange-700 hover:shadow-lg  text-gray-800 hover:text-gray-100 rounded-full text-xm font-semibold  transition-all duration-300 cursor-pointer">Book Now</button>
-                  <p className="text-sm">Starts from <span className="text-2xl font-bold">${card.price}</span></p>
+                  <button className="px-6 py-3 shadow-stone-300 shadow-md  bg-[#1ca8cb] hover:bg-[#1980a1] hover:shadow-[#1980a1] hover:shadow-lg  text-gray-50 hover:text-gray-100 rounded-full text-xm font-semibold  transition-all duration-300 cursor-pointer">Book Now</button>
+                  <p className="text-sm text-[#1b6783]">Starts from <span className="text-2xl font-bold text-[#1e485b]">${card.price}</span></p>
                 </div>
               </div>
             </SwiperSlide>

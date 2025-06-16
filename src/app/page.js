@@ -17,7 +17,7 @@ export default function Home() {
     before:w-[68rem] before:h-[73rem] before:bg-center before:bg-[#8e90f4]
     before:bg-[url(/bg-08.jpg)] before:bg-blend-overlay before:bg-no-repeat 
     before:-z-10 z-40 overflow-hidden before:rounded-t-full 
-    before:bg-gradient-to-br before:from-[#5992db] before:to-[#8a49f3]" style={{backgroundImage: 'linear-gradient(to right, #8e90f4, #7c5aed)'}} >
+    before:bg-gradient-to-br before:from-[#5992db] before:to-[#8a49f3]" style={{backgroundImage: 'linear-gradient(to right, #1ca8cb, #1980a1)'}} >
         <div className="lg:container mx-auto w-full min-h-[550px] h-full flex justify-between items-center gap-28 pt-14 ">
           <HeroSection />
           <div className="relative  basis-1/3    hidden  lg:block">

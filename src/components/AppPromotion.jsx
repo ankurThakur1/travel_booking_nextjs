@@ -2,16 +2,16 @@ import React from "react";
 
 const AppPromotion = () => {
   return (
-    <section className=" py-16  px-4 md:px-8 lg:px-20   relative  bg-gradient-to-r from-amber-500 to-orange-400  min-h-96 bg-cover bg-no-repeat rounded-xl ">
+    <section className=" py-16  px-4 md:px-8 lg:px-20   relative  bg-gradient-to-r from-[#1980a1] to-[#75d7eb]  min-h-96 bg-cover bg-no-repeat rounded-xl ">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         <div className="text-center lg:text-left max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#eefbfd] mb-4">
             Book on the go with our app
           </h2>
-          <p className="text-gray-50 mb-6">
+          <p className="text-[#d4f4f9] mb-6">
             Download our mobile app and enjoy quick, seamless booking, real-time updates, and exclusive app-only deals.
           </p>
-          <div className="flex justify-center lg:justify-start gap-2">
+          <div className="flex flex-col sm:flex-row lg:justify-start gap-2 ">
             <img
               src="/apply-store.png"
               alt="Download on App Store"

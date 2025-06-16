@@ -28,8 +28,8 @@ const DealsAndOffers = () => {
   return (
     <section className="py-12 px-4 md:px-8 lg:px-20 ">
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Deals & Offers</h2>
-        <p className="text-gray-600 mt-2">Save more on your next flight with our latest deals.</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1e485b]">Deals & <span className="relative z-10 before:content-[''] before:absolute before:-top-1 before:-left-3 sm:before:-top-2 sm:before:-left-3 md:before:-top-2 md:before:-left-2 before:w-full before:h-full before:px-14 text-nowrap before:py-5 sm:before:px-7 sm:before:py-6 md:before:px-8 md:before:py-7 lg:before:px-16 lg:before:py-7 before:bg-[#1ca8cb] before:-z-10 before:rounded-[5px] before:skew-x-[-20deg]  text-white">Offers</span></h2>
+        <p className="text-[#1b6783] mt-2">Save more on your next flight with our latest deals.</p>
       </div>
 
       <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -46,12 +46,12 @@ const DealsAndOffers = () => {
               />
             </div>
             <div className="p-5">
-              <span className="text-sm bg-yellow-400 text-black px-3 py-1 rounded-full font-semibold">
+              <span className="text-sm bg-[#1ca8cb] text-white px-3 py-2 rounded-full font-semibold">
                 {deal.badge}
               </span>
-              <h3 className="text-xl font-semibold mt-3 text-gray-800">{deal.title}</h3>
-              <p className="text-gray-600 mt-2 text-sm">{deal.description}</p>
-              <button className="mt-4 inline-block px-4 py-2 bg-orange-500 text-white text-sm rounded-lg hover:bg-orange-600 cursor-pointer transition">
+              <h3 className="text-xl font-semibold mt-3 text-[#1e485b]">{deal.title}</h3>
+              <p className="text-[#1b6783] mt-2 text-sm">{deal.description}</p>
+              <button className="mt-4 inline-block px-4 py-2 bg-[#1ca8cb] text-white text-sm rounded-lg hover:bg-[#1980a1] cursor-pointer transition">
                 Grab Deal
               </button>
             </div>

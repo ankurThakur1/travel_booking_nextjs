@@ -89,7 +89,7 @@ const Testimonials = () => {
         >
           {testimonials.map((item) => (
             <SwiperSlide key={item.id} >
-              <div className="bg-orange-50 rounded-2xl shadow-md   p-6 mx-2 h-full   text-center transition-all duration-300">
+              <div className="bg-[#d4f4f9] rounded-2xl shadow-md   p-6 mx-2 h-full   text-center transition-all duration-300">
                 <div className="flex flex-col items-start gap-3">
                   <div className="w-20 h-20 rounded-full bg-gray-200 overflow-hidden">
                     <img
@@ -100,12 +100,12 @@ const Testimonials = () => {
                   </div>
                   <StarRating rating={item.rating} />
                 </div>
-                <div className="py-6  my-3 text-left border-b-2 border-dashed border-gray-300" >
+                <div className="py-6  my-3 text-left border-b-2 border-dashed border-[#1b6783]" >
                   <p className="text-gray-800 text-sm lg:text-2xl md:text-xl mt-3">{item.review}</p>
                 </div>
                 <div className="flex items-center  gap-4 mt-7">
-                  <h4 className="text-lg font-semibold text-gray-800">{item.name}</h4>
-                  <p className="text-sm text-gray-500">from {item.from}</p>
+                  <h4 className="text-lg font-semibold text-[#1e485b]">{item.name}</h4>
+                  <p className="text-sm text-[#1b6783]">from {item.from}</p>
                 </div>
               </div>
             </SwiperSlide>

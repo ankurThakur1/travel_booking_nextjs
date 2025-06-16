@@ -14,7 +14,7 @@ const HeroForm = () => {
   };
 
   return (
-    <form className=" w-xs md:w-xl sm:min-w-2xs  bg-black/35 backdrop-blur-lg border border-white/20 rounded-xl p-4 md:p-8 shadow-xl text-white space-y-6">
+    <form className=" w-2xs md:w-xl sm:min-w-2xs  bg-black/35 backdrop-blur-lg border border-white/20 rounded-xl p-4 md:p-8 shadow-xl text-white space-y-6">
       <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4">
         <div className="flex   flex-col gap-1">
           <div className="flex flex-col items-start  ">
@@ -73,7 +73,7 @@ const HeroForm = () => {
                 <button
                   type="button"
                   onClick={() => setPassengerOpen(false)}
-                  className="mt-3 w-full bg-orange-500 text-white py-2 rounded hover:bg-orange-600 cursor-pointer"
+                  className="mt-3 w-full bg-[#1ca8cb] text-white py-2 rounded hover:bg-[#1980a1] hover:shadow-[#1980a1] hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
                   Done
                 </button>
@@ -98,7 +98,7 @@ const HeroForm = () => {
           <div className="sm:basis-[48%] w-full">
             <button
               type="submit"
-              className="w-full flex justify-center items-center gap-2 px-6 py-3 text-xl bg-amber-500 rounded-lg hover:bg-amber-600 transition-all duration-300 cursor-pointer"
+              className="w-full flex justify-center items-center gap-2 px-6 py-3 text-xl bg-[#1ca8cb]  rounded-lg hover:bg-[#1980a1] hover:shadow-[#1980a1] transition-all duration-300 cursor-pointer"
             >
               <MdSearch size={20} />
               Search Flights
