@@ -13,8 +13,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="hero-section w-full min-h-[800px] md:min-h-[550px] h-full bg-center bg-no-repeat relative before:content-none lg:before:content-[''] before:absolute before:-top-40 before:-right-120 
-    before:w-[68rem] before:h-[73rem] before:bg-center before:bg-[#8e90f4]
+      <div className="hero-section w-full min-h-[800px] md:min-h-[550px] h-full bg-center bg-no-repeat relative before:content-none lg:before:content-[''] before:absolute before:-top-50 before:-right-120 
+    before:w-[68rem] before:h-[73rem] before:bg-bottom
     before:bg-[url(/bg-08.jpg)] before:bg-blend-overlay before:bg-no-repeat 
     before:-z-10 z-40 overflow-hidden before:rounded-t-full 
     before:bg-gradient-to-br before:from-[#5992db] before:to-[#8a49f3]" style={{backgroundImage: 'linear-gradient(to right, #1ca8cb, #1980a1)'}} >
