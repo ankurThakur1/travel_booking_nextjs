@@ -10,10 +10,10 @@ export const WrapperContext = ({ children }) => {
     const [passengers, setPassengers] = useState({ adult: 1, child: 0, infant: 0 });
     const [tripType, setTripType] = useState(1);
     const [formData, setFormData] = useState({
-        origin: '',
-        destination: '',
-        departureDate: '',
-        returnDate: '',
+        origin: "DEL",
+        destination: "BOM",
+        departureDate: "2025-07-13",
+        returnDate: "2025-07-27",
         currencyCode: 'INR',
         cabin: 'ECONOMY',
     });
@@ -39,9 +39,6 @@ export const WrapperContext = ({ children }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // console.log(isPassengerOpen, passengers, tripType);
-        // router.push("/flightResult");
-
         const requestBody = {
             origin: formData.origin,
             destination: formData.destination,
